@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./zomato.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar"> <strong style="font-weight:bolder"> Zomato </strong>
+            <div id="searchbar">
+                <div id="location"> <img src="./svgs/show live location.svg" alt="show location"> <input type="text"
+                        placeholder="location" class="input"> <img src="./svgs/location menu.svg" id="locationimg"></div>
+                <div id="search"> <img src="./svgs/search icon.svg" alt="search place" width="25px"> <input type="text"
+                        placeholder="Search for the restraunt, cuisine or a dish" class="input" id="searchinput"></div>
+            </div>
+            <div id="login"> <span class="log">Log in</span> <span class="log">Sign up</span> </div>
+        </div>
+
+    </header>
+    <div style="color: grey" > Home / India/Ranchi / New Garden, Kanka, Ranchi Restaurants</div>
+    <div style="display: flex;">
+        <div class="typeoforder">
+            <div style="border-radius: 50%; background-color: rgb(224, 227, 230); margin-right: 30px ;"><img
+                    src="./images/dining out.avif" alt="" class="orderimg"> </div>
+            <div> Dining out </output> </div>
+        </div>
+        <div class="typeoforder">
+            <div style="border-radius: 50%; background-color: rgb(224, 227, 230); margin-right: 30px ;"><img
+                    src="./images/delivery.avif" alt="" class="orderimg"></div><div> Delivery </div> </div>
+                <div class="typeoforder">
+                    <div style="border-radius: 50%; background-color: rgb(224, 227, 230); margin-right: 30px ;"><img
+                            src="./images/nightlife.png" alt="" class="orderimg"> </div><div> Nightlife
+                </div>
+            </div>
+        </div>
+            <section id="filterbox" > 
+            <div class="filter"><img src="./svgs/filter.svg" class="filterimg" style=" margin: top;"> Filter</div>
+            <div class="filter"> <img src="./svgs/delivary time.svg" class="filterimg"> Delivery Time</div>
+            <div class="filter">  Rating 4.0+</div>
+            <div class="filter"> Pure veg</div>
+            <div class="filter"> Cuisine <img src="./svgs/dropdown menu grey.svg" class="filterimg"></div>
+            <div class="filter">More filter <img src="./svgs/dropdown menu grey.svg" class="filterimg"></div>
+             </section>
+             <section style="background-color: rgb(244, 240, 240);">
+
+             <div style=" font-size: 34px; font-weight:500; margin-top: 15px; padding: 20px;" > Inspiration Four your first order</div>
+             <div id="foodslider">
+                <div class="sliderdiv">
+                     <div class="slideelement"><div class="food"><img src="./images/biryani.avif" alt="" class="foodimg"></div> <div class="foodname">Biryani</div></div>
+                <div class="slideelement"> <div class="food"> <img src="./images/momo.avif" alt="" class="foodimg"></div> <div class="foodname"> Momos</div></div>
+                <div class="slideelement"><div class="food"> <img src="./images/paneer.avif" alt="" class="foodimg"></div> <div class="foodname">Paneer</div></div>
+                <div class="slideelement"> <div class="food"> <img src="./images/south indian.avif" alt="" class="foodimg"></div> <div class="foodname">South Indian</div></div>
+                <div class="slideelement"> <div class="food"><img src="./images/chowmin_chinese.avif" alt="" class="foodimg"></div> <div class="foodname"> Chowmin</div></div>
+                <div class="slideelement"><div class="food"> <img src="./images/fried rice.avif" alt="" class="foodimg"></div> <div class="foodname">Fried rice</div></div>
+                <div class="slideelement"><div class="food"><img src="./images/roll.avif" alt="" class="foodimg"></div> <div class="foodname">Rolls</div></div>
+                <div class="slideelement"><div class="food"><img src="./images/burger.avif" alt="" class="foodimg"></div> <div class="foodname">Burger</div></div> 
+                
+             </div>
+             </section>
+            </section>
+            <section style="background-color:rgb(245, 241, 241);">
+
+            <div  style="font-size: 34px; font-weight:500; margin-top: 35px;">Top brands for you </div>
+            <div id="foodslider">
+               <div class="sliderdiv">
+                    <div class="slideelement"><div class="food"><img src="./images/behrooz biryani.avif" alt="" class="foodimg"></div> <div class="foodname">Behroz</div></div>
+               <div class="slideelement"> <div class="food"><img src="./images/bikaner.avif" alt="" class="foodimg"></div> <div class="foodname">Bikaner</div></div>
+               <div class="slideelement"><div class="food"><img src="./images/pizza hut.avif" alt="" class="foodimg"></div> <div class="foodname">Pizzahut</div></div>
+               <div class="slideelement"> <div class="food"><img src="./images/kfc.avif" alt="" class="foodimg"></div> <div class="foodname">Kfc</div></div>
+               <div class="slideelement"> <div class="food"><img src="./images/haldiram.avif" alt="" class="foodimg"></div> <div class="foodname">Haldiram</div></div>
+               <div class="slideelement"><div class="food"><img src="./images/dominos.avif" alt="" class="foodimg"></div> <div class="foodname">Dominos</div></div>
+               <div class="slideelement"><div class="food"><img src="./images/la pinoz.avif" alt="" class="foodimg"></div> <div class="foodname">Lapinos</div></div>
+               <div class="slideelement"><div class="food"><img src="./images/harilal.avif" alt="" class="foodimg"></div> <div class="foodname">Harilal</div></div> 
+               
+            </div>
+            </section>
+            <!-- Here food cards starts... main body -->
+<br>
+            <section class="Cardsroot">
+                <div style="font-size: 33px">Order food online in New Lake, Ranchi</div>
+                <div
+                  class="cardplace"
+                  style="margin: 5px; padding: 2px; display: flex; flex-wrap: wrap"
+                >
+                  <!-- first card -->
+                  <div class="cards">
+                    <div class="cardimgholder">
+                      <img
+                        src="./images/restraunt/biryani house.avif"
+                        alt=""
+                        class="cardimg"
+                      />
+                      <div class="cardoffer1">50% OFF up to 100</div>
+                      <div class="cardoffer2" style="opacity: 0">Pro extra 10% OFF</div>
+                      <div class="cardtime">14 min</div>
+                    </div>
+                    <div class="carddiv">
+                      <div style="width: 87%">Biriyani House</div>
+                      <div
+                        style="
+                          width: 13%;
+                          border-radius: 4px;
+                          background-color: green;
+                          padding-left: 4px;
+                          padding-left: 8px;
+                        "
+                      >
+                        3.9 <img src="./svgs/empty star.svg" alt="" />
+                      </div>
+                    </div>
+          
+                    <div class="carddiv">
+                      <div style="width: 70%">North indian, Biriyani</div>
+                      <div style="width: 30%; text-align: right">&#8360; 200 for one</div>
+                    </div>
+          
+                    <div class="carddiv">
+                      <div class="carddiv01">
+                        <img
+                          src="./images/restraunt/card bottom.webp"
+                          alt=""
+                          class="fitimg"
+                        />
+                      </div>
+                      <div class="carddiv02">
+                        Follows all Max Safety measures to ensure your food is safe
+                      </div>
+                      <div class="carddiv03">
+                        <img
+                          src="./images/restraunt/card bottom2.webp"
+                          alt=""
+                          class="fitimg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+          
+                  <!-- second card -->
+                  <div class="cards">
+                    <div class="cardimgholder">
+                      <img src="./images/restraunt/banja.avif" alt="" class="cardimg" />
+                      <div class="cardoffer1">50% OFF up to 100</div>
+                      <div class="cardoffer2">Pro extra 10% OFF</div>
+                      <div class="cardtime">30 min</div>
+                    </div>
+                    <div class="carddiv">
+                      <div style="width: 87%">Banjara</div>
+                      <div
+                        style="
+                          width: 13%;
+                          border-radius: 4px;
+                          background-color: green;
+                          padding-left: 4px;
+                          padding-left: 8px;
+                        "
+                      >
+                        3.9 <img src="./svgs/empty star.svg" alt="" />
+                      </div>
+                    </div>
+          
+                    <div class="carddiv">
+                      <div style="width: 70%">North indian, Biriyani</div>
+                      <div style="width: 30%; text-align: right">&#8360; 200 for one</div>
+                    </div>
+          
+                    <div class="carddiv">
+                      <div class="carddiv01">
+                        <img
+                          src="./images/restraunt/card bottom.webp"
+                          alt=""
+                          class="fitimg"
+                        />
+                      </div>
+                      <div class="carddiv02">
+                        Follows all Max Safety measures to ensure your food is safe
+                      </div>
+                      <div class="carddiv03">
+                        <img
+                          src="./images/restraunt/card bottom2.webp"
+                          alt=""
+                          class="fitimg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+          
+                  <!-- third card -->
+                  <div class="cards">
+                    <div class="cardimgholder">
+                      <img
+                        src="./images/restraunt/briwasji food.avif"
+                        alt=""
+                        class="cardimg"
+                      />
+                      <div class="cardoffer1" style="opacity: 0">50% OFF up to 100</div>
+                      <div class="cardoffer2" style="opacity: 0">Pro extra 10% OFF</div>
+                      <div class="cardtime" style="opacity: 0">22 min</div>
+                    </div>
+                    <div class="carddiv">
+                      <div style="width: 87%">Briwasji food</div>
+                      <div
+                        style="
+                          width: 13%;
+                          border-radius: 4px;
+                          background-color: green;
+                          padding-left: 4px;
+                          padding-left: 8px;
+                        "
+                      >
+                        3.9 <img src="./svgs/empty star.svg" alt="" />
+                      </div>
+                    </div>
+          
+                    <div class="carddiv">
+                      <div style="width: 70%">North indian, Biriyani</div>
+                      <div style="width: 30%; text-align: right">&#8360; 200 for one</div>
+                    </div>
+          
+                    <div class="carddiv">
+                      <div class="carddiv01">
+                        <img
+                          src="./images/restraunt/card bottom.webp"
+                          alt=""
+                          class="fitimg"
+                        />
+                      </div>
+                      <div class="carddiv02">
+                        Follows all Max Safety measures to ensure your food is safe
+                      </div>
+                      <div class="carddiv03">
+                        <img
+                          src="./images/restraunt/card bottom2.webp"
+                          alt=""
+                          class="fitimg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+          
+                  <!-- forth card -->
+                  <div class="cards">
+                    <div class="cardimgholder">
+                      <img
+                        src="./images/restraunt/dominos pizza.avif"
+                        alt=""
+                        class="cardimg"
+                      />
+                      <div class="cardoffer1">50% OFF up to 100</div>
+                      <div class="cardoffer2">Pro extra 10% OFF</div>
+                      <div class="cardtime">34 min</div>
+                    </div>
+                    <div class="carddiv">
+                      <div style="width: 87%">Dominos</div>
+                      <div
+                        style="
+                          width: 13%;
+                          border-radius: 4px;
+                          background-color: green;
+                          padding-left: 4px;
+                          padding-left: 8px;
+                        "
+                      >
+                        3.9 <img src="./svgs/empty star.svg" alt="" />
+                      </div>
+                    </div>
+          
+                    <div class="carddiv">
+                      <div style="width: 70%">North indian, Biriyani</div>
+                      <div style="width: 30%; text-align: right">&#8360; 200 for one</div>
+                    </div>
+          
+                    <div class="carddiv">
+                      <div class="carddiv01">
+                        <img
+                          src="./images/restraunt/card bottom.webp"
+                          alt=""
+                          class="fitimg"
+                        />
+                      </div>
+                      <div class="carddiv02">
+                        Follows all Max Safety measures to ensure your food is safe
+                      </div>
+                      <div class="carddiv03">
+                        <img
+                          src="./images/restraunt/card bottom2.webp"
+                          alt=""
+                          class="fitimg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+          
+                  <!-- fifth card -->
+                  <div class="cards">
+                    <div class="cardimgholder">
+                      <img
+                        src="./images/restraunt/dosa plaza.avif"
+                        alt=""
+                        class="cardimg"
+                      />
+                      <div class="cardoffer1" style="opacity: 0">50% OFF up to 100</div>
+                      <div class="cardoffer2" style="opacity: 0">Pro extra 10% OFF</div>
+                      <div class="cardtime">14 min</div>
+                    </div>
+                    <div class="carddiv">
+                      <div style="width: 87%">Dhosa plaza</div>
+                      <div
+                        style="
+                          width: 13%;
+                          border-radius: 4px;
+                          background-color: green;
+                          padding-left: 4px;
+                          padding-left: 8px;
+                        "
+                      >
+                        3.9 <img src="./svgs/empty star.svg" alt="" />
+                      </div>
+                    </div>
+          
+                    <div class="carddiv">
+                      <div style="width: 70%">North indian, Biriyani</div>
+                      <div style="width: 30%; text-align: right">&#8360; 200 for one</div>
+                    </div>
+          
+                    <div class="carddiv">
+                      <div class="carddiv01">
+                        <img
+                          src="./images/restraunt/card bottom.webp"
+                          alt=""
+                          class="fitimg"
+                        />
+                      </div>
+                      <div class="carddiv02">
+                        Follows all Max Safety measures to ensure your food is safe
+                      </div>
+                      <div class="carddiv03">
+                        <img
+                          src="./images/restraunt/card bottom2.webp"
+                          alt=""
+                          class="fitimg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+          
+                  <!-- sixth card -->
+                  <div class="cards">
+                    <div class="cardimgholder">
+                      <img src="./images/restraunt/cafe 18.avif" alt="" class="cardimg" />
+                      <div class="cardoffer1">50% OFF up to 100</div>
+                      <div class="cardoffer2" style="opacity: 0">Pro extra 10% OFF</div>
+                      <div class="cardtime">10 min</div>
+                    </div>
+                    <div class="carddiv">
+                      <div style="width: 87%">Biriyani mehal</div>
+                      <div
+                        style="
+                          width: 13%;
+                          border-radius: 4px;
+                          background-color: green;
+                          padding-left: 4px;
+                          padding-left: 8px;
+                        "
+                      >
+                        3.9 <img src="./svgs/empty star.svg" alt="" />
+                      </div>
+                    </div>
+          
+                    <div class="carddiv">
+                      <div style="width: 70%">North indian, Biriyani</div>
+                      <div style="width: 30%; text-align: right">&#8360; 200 for one</div>
+                    </div>
+          
+                    <div class="carddiv">
+                      <div class="carddiv01">
+                        <img
+                          src="./images/restraunt/card bottom.webp"
+                          alt=""
+                          class="fitimg"
+                        />
+                      </div>
+                      <div class="carddiv02">
+                        Follows all Max Safety measures to ensure your food is safe
+                      </div>
+                      <div class="carddiv03">
+                        <img
+                          src="./images/restraunt/card bottom2.webp"
+                          alt=""
+                          class="fitimg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+          
+                  <!-- seventh card -->
+                  <div class="cards">
+                    <div class="cardimgholder">
+                      <img
+                        src="./images/restraunt/chasmebaddur.avif"
+                        alt=""
+                        class="cardimg"
+                      />
+                      <div class="cardoffer1" style="opacity: 0">50% OFF up to 100</div>
+                      <div class="cardoffer2" style="opacity: 0">Pro extra 10% OFF</div>
+                      <div class="cardtime">20 min</div>
+                    </div>
+                    <div class="carddiv">
+                      <div style="width: 87%">Chasmebaddur</div>
+                      <div
+                        style="
+                          width: 13%;
+                          border-radius: 4px;
+                          background-color: green;
+                          padding-left: 4px;
+                          padding-left: 8px;
+                        "
+                      >
+                        3.9 <img src="./svgs/empty star.svg" alt="" />
+                      </div>
+                    </div>
+          
+                    <div class="carddiv">
+                      <div style="width: 70%">North indian, Biriyani</div>
+                      <div style="width: 30%; text-align: right">&#8360; 200 for one</div>
+                    </div>
+          
+                    <div class="carddiv">
+                      <div class="carddiv01">
+                        <img
+                          src="./images/restraunt/card bottom.webp"
+                          alt=""
+                          class="fitimg"
+                        />
+                      </div>
+                      <div class="carddiv02">
+                        Follows all Max Safety measures to ensure your food is safe
+                      </div>
+                      <div class="carddiv03">
+                        <img
+                          src="./images/restraunt/card bottom2.webp"
+                          alt=""
+                          class="fitimg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+          
+                  <!-- eighth card -->
+                  <div class="cards">
+                    <div class="cardimgholder">
+                      <img
+                        src="./images/restraunt/hitchki thela.avif"
+                        alt=""
+                        class="cardimg"
+                      />
+                      <div class="cardoffer1" style="opacity: 0">50% OFF up to 100</div>
+                      <div class="cardoffer2" style="opacity: 0">Pro extra 10% OFF</div>
+                      <div class="cardtime">19 min</div>
+                    </div>
+                    <div class="carddiv">
+                      <div style="width: 87%">Khichdi thela</div>
+                      <div
+                        style="
+                          width: 13%;
+                          border-radius: 4px;
+                          background-color: green;
+                          padding-left: 4px;
+                          padding-left: 8px;
+                        "
+                      >
+                        3.9 <img src="./svgs/empty star.svg" alt="" />
+                      </div>
+                    </div>
+          
+                    <div class="carddiv">
+                      <div style="width: 70%">North indian, Biriyani</div>
+                      <div style="width: 30%; text-align: right">&#8360; 200 for one</div>
+                    </div>
+          
+                    <div class="carddiv">
+                      <div class="carddiv01">
+                        <img
+                          src="./images/restraunt/card bottom.webp"
+                          alt=""
+                          class="fitimg"
+                        />
+                      </div>
+                      <div class="carddiv02">
+                        Follows all Max Safety measures to ensure your food is safe
+                      </div>
+                      <div class="carddiv03">
+                        <img
+                          src="./images/restraunt/card bottom2.webp"
+                          alt=""
+                          class="fitimg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+          
+                  <!-- ninth card -->
+                  <div class="cards">
+                    <div class="cardimgholder">
+                      <img src="./images/restraunt/hot lips.avif" alt="" class="cardimg" />
+                      <div class="cardoffer1">50% OFF up to 100</div>
+                      <div class="cardoffer2">Pro extra 10% OFF</div>
+                      <div class="cardtime">25 min</div>
+                    </div>
+                    <div class="carddiv">
+                      <div style="width: 87%">Hotlips</div>
+                      <div
+                        style="
+                          width: 13%;
+                          border-radius: 4px;
+                          background-color: green;
+                          padding-left: 4px;
+                          padding-left: 8px;
+                        "
+                      >
+                        3.9 <img src="./svgs/empty star.svg" alt="" />
+                      </div>
+                    </div>
+          
+                    <div class="carddiv">
+                      <div style="width: 70%">North indian, Biriyani</div>
+                      <div style="width: 30%; text-align: right">&#8360; 200 for one</div>
+                    </div>
+          
+                    <div class="carddiv">
+                      <div class="carddiv01">
+                        <img
+                          src="./images/restraunt/card bottom.webp"
+                          alt=""
+                          class="fitimg"
+                        />
+                      </div>
+                      <div class="carddiv02">
+                        Follows all Max Safety measures to ensure your food is safe
+                      </div>
+                      <div class="carddiv03">
+                        <img
+                          src="./images/restraunt/card bottom2.webp"
+                          alt=""
+                          class="fitimg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+          
+                  <!-- 10th card -->
+                  <div class="cards">
+                    <div class="cardimgholder">
+                      <img src="./images/restraunt/kfc.avif" alt="" class="cardimg" />
+                      <div class="cardoffer1">50% OFF up to 100</div>
+                      <div class="cardoffer2" style="opacity: 0">Pro extra 10% OFF</div>
+                      <div class="cardtime">34 min</div>
+                    </div>
+                    <div class="carddiv">
+                      <div style="width: 87%">Kfc</div>
+                      <div
+                        style="
+                          width: 13%;
+                          border-radius: 4px;
+                          background-color: green;
+                          padding-left: 4px;
+                          padding-left: 8px;
+                        "
+                      >
+                        3.9 <img src="./svgs/empty star.svg" alt="" />
+                      </div>
+                    </div>
+          
+                    <div class="carddiv">
+                      <div style="width: 70%">North indian, Biriyani</div>
+                      <div style="width: 30%; text-align: right">&#8360; 200 for one</div>
+                    </div>
+          
+                    <div class="carddiv">
+                      <div class="carddiv01">
+                        <img
+                          src="./images/restraunt/card bottom.webp"
+                          alt=""
+                          class="fitimg"
+                        />
+                      </div>
+                      <div class="carddiv02">
+                        Follows all Max Safety measures to ensure your food is safe
+                      </div>
+                      <div class="carddiv03">
+                        <img
+                          src="./images/restraunt/card bottom2.webp"
+                          alt=""
+                          class="fitimg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+          
+                  <!-- 11th card -->
+                  <div class="cards">
+                    <div class="cardimgholder">
+                      <img src="./images/restraunt/jashn.avif" alt="" class="cardimg" />
+                      <div class="cardoffer1">50% OFF up to 100</div>
+                      <div class="cardoffer2" style="opacity: 0">Pro extra 10% OFF</div>
+                      <div class="cardtime">30 min</div>
+                    </div>
+                    <div class="carddiv">
+                      <div style="width: 87%">Jashn</div>
+                      <div
+                        style="
+                          width: 13%;
+                          border-radius: 4px;
+                          background-color: green;
+                          padding-left: 4px;
+                          padding-left: 8px;
+                        "
+                      >
+                        3.9 <img src="./svgs/empty star.svg" alt="" />
+                      </div>
+                    </div>
+          
+                    <div class="carddiv">
+                      <div style="width: 70%">North indian, Biriyani</div>
+                      <div style="width: 30%; text-align: right">&#8360; 200 for one</div>
+                    </div>
+          
+                    <div class="carddiv">
+                      <div class="carddiv01">
+                        <img
+                          src="./images/restraunt/card bottom.webp"
+                          alt=""
+                          class="fitimg"
+                        />
+                      </div>
+                      <div class="carddiv02">
+                        Follows all Max Safety measures to ensure your food is safe
+                      </div>
+                      <div class="carddiv03">
+                        <img
+                          src="./images/restraunt/card bottom2.webp"
+                          alt=""
+                          class="fitimg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+          
+                  <!-- 12th card -->
+                  <div class="cards">
+                    <div class="cardimgholder">
+                      <img
+                        src="./images/restraunt/raj sweets.avif"
+                        alt=""
+                        class="cardimg"
+                      />
+                      <div class="cardoffer1">50% OFF up to 100</div>
+                      <div class="cardoffer2">Pro extra 10% OFF</div>
+                      <div class="cardtime">34 min</div>
+                    </div>
+                    <div class="carddiv">
+                      <div style="width: 87%">Raj sweets</div>
+                      <div
+                        style="
+                          width: 13%;
+                          border-radius: 4px;
+                          background-color: green;
+                          padding-left: 4px;
+                          padding-left: 8px;
+                        "
+                      >
+                        3.9 <img src="./svgs/empty star.svg" alt="" />
+                      </div>
+                    </div>
+          
+                    <div class="carddiv">
+                      <div style="width: 70%">North indian, Biriyani</div>
+                      <div style="width: 30%; text-align: right">&#8360; 200 for one</div>
+                    </div>
+          
+                    <div class="carddiv">
+                      <div class="carddiv01">
+                        <img
+                          src="./images/restraunt/card bottom.webp"
+                          alt=""
+                          class="fitimg"
+                        />
+                      </div>
+                      <div class="carddiv02">
+                        Follows all Max Safety measures to ensure your food is safe
+                      </div>
+                      <div class="carddiv03">
+                        <img
+                          src="./images/restraunt/card bottom2.webp"
+                          alt=""
+                          class="fitimg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+          
+                  <!-- 13th card -->
+                  <div class="cards">
+                    <div class="cardimgholder">
+                      <img
+                        src="./images/restraunt/what a burger.avif"
+                        alt=""
+                        class="cardimg"
+                      />
+                      <div class="cardoffer1">50% OFF up to 100</div>
+                      <div class="cardoffer2">Pro extra 10% OFF</div>
+                      <div class="cardtime">20 min</div>
+                    </div>
+                    <div class="carddiv">
+                      <div style="width: 87%">What a burger</div>
+                      <div
+                        style="
+                          width: 13%;
+                          border-radius: 4px;
+                          background-color: green;
+                          padding-left: 4px;
+                          padding-left: 8px;
+                        "
+                      >
+                        3.9 <img src="./svgs/empty star.svg" alt="" />
+                      </div>
+                    </div>
+          
+                    <div class="carddiv">
+                      <div style="width: 70%">North indian, Biriyani</div>
+                      <div style="width: 30%; text-align: right">&#8360; 200 for one</div>
+                    </div>
+          
+                    <div class="carddiv">
+                      <div class="carddiv01">
+                        <img
+                          src="./images/restraunt/card bottom.webp"
+                          alt=""
+                          class="fitimg"
+                        />
+                      </div>
+                      <div class="carddiv02">
+                        Follows all Max Safety measures to ensure your food is safe
+                      </div>
+                      <div class="carddiv03">
+                        <img
+                          src="./images/restraunt/card bottom2.webp"
+                          alt=""
+                          class="fitimg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+          
+                  <!-- 14th card -->
+                  <div class="cards">
+                    <div class="cardimgholder">
+                      <img
+                        src="./images/restraunt/punjabi kitchen.avif"
+                        alt=""
+                        class="cardimg"
+                      />
+                    </div>
+                    <div class="carddiv">
+                      <div style="width: 87%">Season fest</div>
+                      <div
+                        style="
+                          width: 13%;
+                          border-radius: 4px;
+                          background-color: green;
+                          padding-left: 4px;
+                          padding-left: 8px;
+                        "
+                      >
+                        3.9 <img src="./svgs/empty star.svg" alt="" />
+                      </div>
+                    </div>
+          
+                    <div class="carddiv">
+                      <div style="width: 70%">North indian, Biriyani</div>
+                      <div style="width: 30%; text-align: right">&#8360; 200 for one</div>
+                    </div>
+          
+                    <div class="carddiv">
+                      <div class="carddiv01">
+                        <img
+                          src="./images/restraunt/card bottom.webp"
+                          alt=""
+                          class="fitimg"
+                        />
+                      </div>
+                      <div class="carddiv02">
+                        Follows all Max Safety measures to ensure your food is safe
+                      </div>
+                      <div class="carddiv03">
+                        <img
+                          src="./images/restraunt/card bottom2.webp"
+                          alt=""
+                          class="fitimg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+          
+                  <!-- 15th card -->
+                  <div class="cards">
+                    <div class="cardimgholder">
+                      <img src="./images/restraunt/lakeview.avif" alt="" class="cardimg" />
+                    </div>
+                    <div class="carddiv">
+                      <div style="width: 87%">Lake view</div>
+                      <div
+                        style="
+                          width: 13%;
+                          border-radius: 4px;
+                          background-color: green;
+                          padding-left: 4px;
+                          padding-left: 8px;
+                        "
+                      >
+                        3.9 <img src="./svgs/empty star.svg" alt="" />
+                      </div>
+                    </div>
+          
+                    <div class="carddiv">
+                      <div style="width: 70%">North indian, Biriyani</div>
+                      <div style="width: 30%; text-align: right">&#8360; 200 for one</div>
+                    </div>
+          
+                    <div class="carddiv">
+                      <div class="carddiv01">
+                        <img
+                          src="./images/restraunt/card bottom.webp"
+                          alt=""
+                          class="fitimg"
+                        />
+                      </div>
+                      <div class="carddiv02">
+                        Follows all Max Safety measures to ensure your food is safe
+                      </div>
+                      <div class="carddiv03">
+                        <img
+                          src="./images/restraunt/card bottom2.webp"
+                          alt=""
+                          class="fitimg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+          
+                  <!-- last card -->
+                  <div class="cards">
+                    <div class="cardimgholder">
+                      <img
+                        src="./images/restraunt/nanal dhaba.avif"
+                        alt=""
+                        class="cardimg"
+                      />
+                    </div>
+                    <div class="carddiv">
+                      <div style="width: 87%">Nana ka dhaba</div>
+                      <div
+                        style="
+                          width: 13%;
+                          border-radius: 4px;
+                          background-color: green;
+                          padding-left: 4px;
+                          padding-left: 8px;
+                        "
+                      >
+                        3.9 <img src="./svgs/empty star.svg" alt="" />
+                      </div>
+                    </div>
+          
+                    <div class="carddiv">
+                      <div style="width: 70%">North indian, Biriyani</div>
+                      <div style="width: 30%; text-align: right">&#8360; 200 for one</div>
+                    </div>
+          
+                    <div class="carddiv">
+                      <div class="carddiv01">
+                        <img
+                          src="./images/restraunt/card bottom.webp"
+                          alt=""
+                          class="fitimg"
+                        />
+                      </div>
+                      <div class="carddiv02">
+                        Follows all Max Safety measures to ensure your food is safe
+                      </div>
+                      <div class="carddiv03">
+                        <img
+                          src="./images/restraunt/card bottom2.webp"
+                          alt=""
+                          class="fitimg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- here comes the footer -->
+          
+              <section style="background-color: rgb(243, 241, 241); padding: 5px; margin-bottom:15px">
+                <div
+                  class="options"
+                  style="
+                    font-size: 25px;
+                    font-weight: bold;
+                    background-color: rgb(243, 241, 241);
+                    border: none;
+                  "
+                >
+                  Explore options near me
+                </div>
+                <div class="options">
+                  Popular cuisines near me
+                  <img src="./svgs/dropdown menu.svg" alt="" class="optimg" />
+                </div>
+                <div class="options">
+                  restraunt types near me
+                  <img src="./svgs/dropdown menu.svg" alt="" class="optimg" />
+                </div>
+                <div class="options">
+                  Cities we deliver to
+                  <img src="./svgs/dropdown menu.svg" alt="" class="optimg" />
+                </div>
+              </section>
+          
+              <footer>
+                <div class="footer" style="display: flex">
+                  <div style="width: 75%; display: inline-block">
+                    <h1>zomato</h1>
+                  </div>
+          
+                  <div
+                    style="
+                      display: flex;
+                      width: 27%;
+                      justify-content: center;
+                      align-items: center;
+                    "
+                  >
+                    <div class="flagmain">
+                      <div
+                        style="
+                          display: flex;
+                          width: 80%;
+                          border: 2px solid rgb(0, 0, 0);
+                          margin-right: 9px;
+                          padding: 0px 0px 0px 5px;
+                          border-radius: 4px;
+                        "
+                      >
+                        <img
+                          src="./svgs/india.svg"
+                          alt=""
+                          style="width: 30%; object-fit: contain"
+                        />
+          
+                        <div style="margin: 7px">India</div>
+                        <div style="width: 10%">
+                          <img
+                            src="./svgs/dropdown menu.svg"
+                            alt=""
+                            style="object-fit: contain; margin-top: 5px"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flagmain">
+                      <div
+                        style="
+                          width: 90%;
+                          display: flex;
+                          border: 2px solid rgb(0, 0, 0);
+                          padding: 0px 0px 0px 5px;
+                          border-radius: 4px;
+                        "
+                      >
+                        <img src="./svgs/language globe.svg" alt="" style="width: 20%" />
+          
+                        <div style="margin: 7px">English</div>
+                        <div style="width: 20%; padding: 2px 0px 2px 0px">
+                          <img
+                            src="./svgs/dropdown menu.svg"
+                            alt=""
+                            style="object-fit: contain; margin-top: 5px"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          
+                <div style="display: flex" class="footerli">
+                  <ul>
+                    <li class="boldinfo">ABOUT ZOMATO</li>
+                    <li>Who we are</li>
+                    <li>Blog</li>
+                    <li>Work with us</li>
+                    <li>Investors relation</li>
+                    <li>Report Fraud</li>
+                    <li>CONTACT US</li>
+                  </ul>
+                  <ul>
+                    <li class="boldinfo">ZOMAVERSE</li>
+                    <li>Zomato</li>
+                    <li>Blinkit</li>
+                    <li>Feeding India</li>
+                    <li>Hyper pure</li>
+                    <li>Zomaland</li>
+                  </ul>
+                  <ul>
+                    <li class="boldinfo">FOR RESTRAUNTS</li>
+                    <li>Partner With Us</li>
+                    <li>Apply For You</li>
+                    <li><br /></li>
+                    <li class="boldinfo">FOR ENTERPRISES</li>
+                    <li>Zomato For Work</li>
+                  </ul>
+                  <ul>
+                    <li class="boldinfo">LEARN MORE</li>
+                    <li>Privacy</li>
+                    <li>Security</li>
+                    <li>Terms</li>
+                    <li>Site Map</li>
+                  </ul>
+                  <ul>
+                    <li class="boldinfo">Social links</li>
+                    <li>
+                      <img src="./svgs/twitter.svg" alt="" class="imgsocial" /><img
+                        src="./svgs/instagram.svg"
+                        alt=""
+                        class="imgsocial"
+                      /><img src="./svgs/facebook.svg" alt="" class="imgsocial" /><img
+                        src="./svgs/linkdin.svg"
+                        alt=""
+                        class="imgsocial"
+                      /><img src="./svgs/youtube.svg" alt="" class="imgsocial" />
+                    </li>
+                  </ul>
+                </div>
+              </footer>
+              <div class="network">
+                No network connectivity. please check your network
+              </div>
+          
+
+            
+</body>
+
+</html>
