@@ -111,6 +111,8 @@ header {
   position: sticky;
   top: 0px;
   z-index: 100;
+  padding-left: 7rem;
+  padding-right: 4.5rem;
 }
 
 .filter {
