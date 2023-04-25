@@ -254,6 +254,9 @@ header {
 .cardsroot {
   width: 88%;
 }
+.cardroothead {
+  font-size: 33px;
+}
 .cards {
   display: flex;
   flex-direction: column;
@@ -494,7 +497,9 @@ footer {
     padding-left: 0.1rem;
     padding-right: 0.1rem;
   }
-
+  .cardroothead {
+    font-size: 24px;
+  }
   .footer {
     display: flex;
     flex-direction: column;
@@ -629,6 +634,7 @@ footer {
     width: 100%;
     min-width: 0px;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
   }
   .slideelement {
@@ -655,6 +661,9 @@ footer {
   }
   #login {
     display: none;
+  }
+  .cardroothead {
+    font-size: 18px;
   }
   .options {
     padding: 10px;
