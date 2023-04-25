@@ -12,18 +12,18 @@
 <body>
   <section id="head">
     <header>
-        <div class="navbar"> <strong style="font-weight:1000px"> Zomato </strong>
+        <div class="navbar"><span> <strong style="font-weight:1000px"> Zomato  </strong> <img src="./images/zomato-signin.svg" alt="" id="signin"> </span>
             <div id="searchbar">
-                <div id="location"> <img src="./svgs/show live location.svg" alt="show location"> <input type="text"
+                <div id="location"> <img src="./svgs/show live location.svg" alt="show location" style="margin-right: 10px;"> <input type="text"
                         placeholder="location" class="input"> <img src="./svgs/location menu.svg" id="locationimg"></div>
-                <div id="search"> <img src="./svgs/search icon.svg" alt="search place" width="25px"> <input type="text"
+                <div id="search"> <img src="./svgs/search icon.svg" class="searchimg" alt="search place" style="margin-right: 10px;"> <input type="text"
                         placeholder="Search for the restraunt, cuisine or a dish" class="input" id="searchinput"></div>
             </div>
             <div id="login"> <span class="log">Log in</span> <span class="log">Sign up</span> </div>
         </div>
 
     </header>
-    <div style="color: grey" > Home / India/Ranchi / New Garden, Kanka, Ranchi Restaurants</div>
+    <div style="color: grey;margin:7px" > Home / India/Ranchi / New Garden, Kanka, Ranchi Restaurants</div>
     <div style="display: flex;">
         <div class="typeoforder">
             <div style="border-radius: 50%; background-color: rgb(224, 227, 230); margin-right: 20px ;"><img
@@ -40,19 +40,20 @@
             </div>
         </div>
              </section>
-             <section id="filterbox" > 
+             <section id="filterbox" > <div id="filterplace">
               <div class="filter"><img src="./svgs/filter.svg" class="filterimg" style=" margin: top;"> Filter</div>
               <div class="filter"> <img src="./svgs/delivary time.svg" class="filterimg"> Delivery Time</div>
               <div class="filter">  Rating 4.0+</div>
               <div class="filter"> Pure veg</div>
               <div class="filter"> Cuisine <img src="./svgs/dropdown menu grey.svg" class="filterimg"></div>
               <div class="filter">More filter <img src="./svgs/dropdown menu grey.svg" class="filterimg"></div>
-               </section>
-             <section class="inspiration">
+            </div> </section>
+             <section class="inspiration"> <div class="button" onclick="scrollbtn()"> > </div>
+              <div class="inspirationin">
 
-             <div style=" font-size: 34px; font-weight:500; margin-top: 15px; padding: 20px;" > Inspiration Four your first order</div>
+             <div class="inspirationtext" > Inspiration Four your first order</div>
              <div id="foodslider">
-                <div class="sliderdiv">
+                <div class="sliderdiv" id="foodsliderdiv">
                      <div class="slideelement"><div class="food"><img src="./images/biryani.avif" alt="" class="foodimg"></div> <div class="foodname">Biryani</div></div>
                 <div class="slideelement"> <div class="food"> <img src="./images/momo.avif" alt="" class="foodimg"></div> <div class="foodname"> Momos</div></div>
                 <div class="slideelement"><div class="food"> <img src="./images/paneer.avif" alt="" class="foodimg"></div> <div class="foodname">Paneer</div></div>
@@ -63,12 +64,14 @@
                 <div class="slideelement"><div class="food"><img src="./images/burger.avif" alt="" class="foodimg"></div> <div class="foodname">Burger</div></div> 
                 
              </div>
+            </div>
              </section>
             </section>
-            <section class="inspiration">
+            <section class="inspiration"><div class="button" onclick="scrollbtn()"> > </div>
+               <div class="inspirationbrandin">
 
-            <div  style="font-size: 34px; font-weight:500; margin-top: 35px;">Top brands for you </div>
-            <div id="foodslider">
+            <div  class="inspirationtext">Top brands for you </div>
+            <div id="brandslider">
                <div class="sliderdiv">
                     <div class="slideelement"><div class="food"><img src="./images/behrooz biryani.avif" alt="" class="foodimg"></div> <div class="foodname">Behroz</div></div>
                <div class="slideelement"> <div class="food"><img src="./images/bikaner.avif" alt="" class="foodimg"></div> <div class="foodname">Bikaner</div></div>
@@ -80,6 +83,7 @@
                <div class="slideelement"><div class="food"><img src="./images/harilal.avif" alt="" class="foodimg"></div> <div class="foodname">Harilal</div></div> 
                
             </div>
+          </div>
             </section>
             <!-- Here food cards starts... main body -->
 <br>
@@ -907,7 +911,7 @@
               </section>
               <!-- here comes the footer -->
           
-              <section class="explore">
+              <section class="explore"><div class="explorein">
                 <div
                   class="options"
                   style="
@@ -931,6 +935,7 @@
                   Cities we deliver to
                   <img src="./svgs/dropdown menu.svg" alt="" class="optimg" />
                 </div>
+              </div>
               </section>
           
               <footer>
@@ -1002,7 +1007,7 @@
                     <li>Report Fraud</li>
                     <li>CONTACT US</li>
                   </ul>
-                  <ul class="boldinfo2">
+                  <ul id="boldinfo2">
                     <li class="boldinfo">ZOMAVERSE</li>
                     <li>Zomato</li>
                     <li>Blinkit</li>
@@ -1010,7 +1015,7 @@
                     <li>Hyper pure</li>
                     <li>Zomaland</li>
                   </ul>
-                  <ul class="boldinfo2">
+                  <ul id="boldinfo2">
                     <li class="boldinfo">FOR RESTRAUNTS</li>
                     <li>Partner With Us</li>
                     <li>Apply For You</li>
@@ -1050,3 +1055,9 @@
 </body>
 
 </html>
+<script>
+  function scrollbtn(){
+
+
+  }
+</script>

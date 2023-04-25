@@ -1,16 +1,23 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #head {
-  padding-left: 7rem;
-  padding-right: 4.5rem;
+  width: 88%;
 }
 header {
   display: flex;
-  margin: 10px;
-  flex-direction: column;
+}
+#signin {
+  display: none;
 }
 
 .navbar {
@@ -24,11 +31,12 @@ header {
 }
 #searchbar {
   display: flex;
-  border: 1px solid grey;
+  border: 1px solid silver;
   box-shadow: -2px 2px 4px rgb(128, 124, 124);
   border-radius: 7px;
   margin-left: 20px;
-  width: 60%;
+  width: 53%;
+  height: 50px;
 }
 
 #locationimg {
@@ -47,28 +55,37 @@ header {
   display: flex;
   padding: 5px;
   align-items: center;
+  width: 40%;
 }
 #search {
   padding: 5px;
   display: flex;
-  width: 40%;
+  width: 50%;
+  align-items: center;
 }
 
 .input {
   border: 2px solid white;
   height: 30px;
   outline: none;
+  width: 75%;
 }
 #searchinput {
   width: 100%;
 }
-
+.searchimg {
+  width: 20px;
+}
 .log {
+  text-align: center;
+  display: flex;
+  align-items: center;
   width: 100px;
   height: 50px;
   font-size: 22px;
   color: grey;
   margin: 5px;
+  white-space: nowrap;
 }
 .log:hover {
   width: 100px;
@@ -85,6 +102,7 @@ header {
   margin: 5px;
   height: 100px;
   width: 200px;
+  border-bottom: 2px solid transparent;
 }
 .typeoforder:hover {
   box-sizing: border-box;
@@ -102,22 +120,26 @@ header {
 }
 
 #filterbox {
+  box-sizing: border-box;
   margin-top: 2px;
-  padding: 10px;
+
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+
   background-color: white;
   width: 100%;
   position: sticky;
   top: 0px;
   z-index: 100;
-  padding-left: 7rem;
-  padding-right: 4.5rem;
+}
+#filterplace {
+  display: flex;
+  width: 90%;
 }
 
 .filter {
   border: 2px solid rgb(185, 177, 177);
-
+  white-space: nowrap;
   border-radius: 8px;
   margin: auto;
   display: flex;
@@ -137,42 +159,79 @@ header {
   cursor: pointer;
 }
 .inspiration {
-  padding-left: 7rem;
-  padding-right: 4.5rem;
   background-color: rgb(244, 240, 240);
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  position: relative;
 }
-#foodslider {
-  height: 220px;
-  overflow-x: auto;
-  -webkit-: none;
+.inspirationbrandin {
+  width: 90%;
+  overflow: hidden;
+}
+.button {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 45%;
+  right: 6%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  box-shadow: -3px 3px 3px grey;
+}
+.button:hover {
+  background-color: rgb(222, 219, 219);
+  cursor: pointer;
+}
+.inspirationin {
+  width: 90%;
+  overflow: hidden;
+}
+.inspirationtext {
+  font-size: 34px;
+  font-weight: 400;
+  margin-top: 15px;
+  padding: 20px;
 }
 
 .sliderdiv {
-  height: 98%;
-  width: 1800px;
+  width: 150%;
+  min-width: 1500px;
 
   display: inline-flex;
-  justify-content: space-around;
 }
 .slideelement {
-  width: 12%;
+  width: 11%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .slideelement:hover {
-  width: 12%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   cursor: pointer;
+}
+#foodslider {
+  overflow: scroll;
+  width: 100%;
+}
+#brandslider {
+  overflow: scroll;
+  width: 100%;
+}
+#brandslider::-webkit-scrollbar {
+  display: none;
 }
 #foodslider::-webkit-scrollbar {
   display: none;
 }
 .food {
-  height: 70%;
-  width: 68%;
+  height: 150px;
+  width: 150px;
   text-align: center;
   background-color: rgb(231, 226, 226);
   border-radius: 50%;
@@ -193,8 +252,7 @@ header {
 }
 
 .cardsroot {
-  padding-left: 7rem;
-  padding-right: 4.5rem;
+  width: 88%;
 }
 .cards {
   display: flex;
@@ -284,12 +342,18 @@ header {
   background-color: rgb(243, 241, 241);
   padding: 5px;
   margin-bottom: 15px;
-  padding-left: 7rem;
-  padding-right: 4.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+.explorein {
+  width: 90%;
 }
 .options {
   padding: 15px;
-  margin: 10px;
+  margin-bottom: 10px;
   position: relative;
   background-color: white;
   width: 95%;
@@ -298,18 +362,10 @@ header {
   display: flex;
   align-items: center;
   border-radius: 10px;
+  box-sizing: border-box;
 }
 .options:hover {
-  padding: 15px;
-  margin: 10px;
   background-color: rgb(233, 230, 230);
-  width: 95%;
-  border: 1px solid silver;
-  font-size: 20px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  border-radius: 10px;
   cursor: pointer;
 }
 
@@ -318,12 +374,18 @@ header {
   position: absolute;
   right: 5%;
 }
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(231, 226, 226);
+}
 .footer {
   display: flex;
   padding-left: 20px;
   background-color: rgb(231, 226, 226);
-  padding-left: 8rem;
-  padding-right: 3.3rem;
+  width: 90%;
 }
 .flagscontainer {
   display: flex;
@@ -333,6 +395,7 @@ header {
 }
 .flagmain {
   width: 40%;
+  min-width: 130px;
   margin-right: 12px;
 }
 .flagmain:hover {
@@ -357,8 +420,7 @@ header {
 }
 .footerli {
   background-color: rgb(231, 226, 226);
-  padding-left: 7.6rem;
-  padding-right: 4.5rem;
+  width: 90%;
   display: flex;
 }
 .imgsocial {
@@ -380,33 +442,59 @@ header {
   letter-spacing: 1px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 830px) {
   body {
     font-size: 12px;
   }
   #head {
-    padding-left: 0.1rem;
-    padding-right: 0.1rem;
+    width: 98%;
   }
-  #login {
-    display: none;
+  #searchbar {
+    height: 40px;
   }
-  .inspiration {
-    padding-left: 0.1rem;
-    padding-right: 0.1rem;
+  .log {
+    font-size: 19px;
+  }
+  .inspirationin {
+    width: 98%;
     background-color: rgb(244, 240, 240);
   }
+  .inspirationbrandin {
+    width: 98%;
+    background-color: rgb(244, 240, 240);
+  }
+  .inspirationtext {
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 10px;
+    padding: 10px;
+  }
+  #filterplace {
+    width: 98%;
+  }
+  .sliderdiv {
+    min-width: 700px;
+  }
+  .button {
+    display: none;
+  }
+  .food {
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    background-color: rgb(231, 226, 226);
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .foodname {
+    font-size: 18px;
+  }
+
   .cardsroot {
     padding-left: 0.1rem;
     padding-right: 0.1rem;
   }
-  .explore {
-    background-color: rgb(243, 241, 241);
-    padding: 5px;
-    margin-bottom: 15px;
-    padding-left: 0.1rem;
-    padding-right: 0.1rem;
-  }
+
   .footer {
     display: flex;
     flex-direction: column;
@@ -432,10 +520,144 @@ header {
     display: flex;
     flex-wrap: wrap;
   }
-  #search {
+
+  #boldinfo2 {
     display: none;
   }
-  .boldinfo2 li {
+  .cards {
+    width: 270px;
+    height: 350px;
+  }
+  .cards:hover {
+    width: 270px;
+    height: 350px;
+  }
+  .cardoffer1 {
+    color: antiquewhite;
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 1rem;
+    background-color: rgb(49, 49, 193);
+    width: 42%;
+    padding-left: 5%;
+    opacity: 0.95;
+  }
+  .cardoffer2 {
+    color: antiquewhite;
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 2.5rem;
+    background-color: rgb(242, 5, 5);
+    width: 42%;
+    padding-left: 15px;
+    opacity: 0.95;
+  }
+  .explorein {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .explore {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 590px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .navbar span {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 7px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: -2px 2px 4px rgb(128, 124, 124);
+  }
+  #searchbar {
+    display: flex;
+    border: 1px solid silver;
+    box-shadow: 0px 0px 0px rgb(255, 255, 255);
+  }
+
+  #searchinput {
     display: none;
+  }
+
+  #locationimg {
+    display: none;
+  }
+
+  #location {
+    width: 90%;
+  }
+  #search {
+    width: 10%;
+  }
+  .searchimg {
+    padding: 10px;
+    background-color: silver;
+    border-radius: 50%;
+    width: 15px;
+  }
+  #signin {
+    display: inline;
+  }
+  #searchbar {
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: 0px;
+  }
+  .typeoforder {
+    display: none;
+  }
+  #filterbox {
+    overflow: scroll;
+  }
+  #filterbox::-webkit-scrollbar {
+    display: none;
+  }
+  .inspirationin {
+    border: 1px solid grey;
+    margin-top: 5px;
+    border-radius: 7px;
+  }
+
+  #foodsliderdiv {
+    width: 100%;
+    min-width: 0px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .slideelement {
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #foodslider {
+    overflow: visible;
+    width: 100%;
+  }
+
+  .food {
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    background-color: rgb(231, 226, 226);
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .foodname {
+    font-size: 13px;
+  }
+  #login {
+    display: none;
+  }
+  .options {
+    padding: 10px;
+    font-size: 16px;
   }
 }
