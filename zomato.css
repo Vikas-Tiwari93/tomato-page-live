@@ -491,6 +491,7 @@ footer {
   }
   .foodname {
     font-size: 18px;
+    margin-top: 10px;
   }
 
   .cardsroot {
@@ -658,6 +659,7 @@ footer {
   }
   .foodname {
     font-size: 13px;
+    margin-top: 5px;
   }
   #login {
     display: none;
