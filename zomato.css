@@ -294,6 +294,7 @@ header {
   padding: 3px;
 }
 .cardplace {
+  gap: 10px;
   margin: 5px;
   padding: 2px;
   display: flex;
@@ -433,13 +434,37 @@ footer {
   margin: 3px;
 }
 .network {
-  background-color: red;
-  color: white;
-  text-align: center;
+  background-color: rgba(255, 0, 0, 0.759);
+  display: flex;
+  justify-content: center;
+
+  color: rgb(5, 4, 4);
+
   position: fixed;
-  left: 0px;
-  bottom: 0px;
-  width: 100%;
+  left: 10px;
+  bottom: 3%;
+  width: 430px;
+  height: 100px;
+  box-sizing: border-box;
+}
+#contactimg {
+  width: 25%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contactdetail {
+  width: 75%;
+  height: 100%;
+
+  padding: 7px;
+  font-weight: 500;
+}
+#contactdetail p {
+  margin: 7px;
+  border-bottom: 1px solid silver;
 }
 .boldinfo {
   font-weight: bold;
@@ -673,5 +698,21 @@ footer {
   .options {
     padding: 10px;
     font-size: 16px;
+  }
+  .network {
+    width: 350px;
+    font-size: 12px;
+    height: 65px;
+    bottom: 5px;
+    width: 95%;
+  }
+  #contactimg {
+    display: none;
+  }
+  #contactdetail {
+    width: 100%;
+  }
+  #contactdetail p {
+    margin: 2px;
   }
 }
