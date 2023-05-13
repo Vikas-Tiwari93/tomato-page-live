@@ -1045,8 +1045,9 @@
                   </ul>
                 </div>
               </footer>
-              <div class="network">
-                <div id="contactimg"><img src="./images/my linkedin.jpg" alt="" style="border-radius: 50%;width:75%;height:80%"></div>
+              <div id="network">
+                <button id="button" onclick="closed()"> x </button>
+                <div id="contactimg"><img src="./images/my linkedin.jpg" alt="" style="border-radius: 50%;width:75%;height:80%" onclick="opened()"></div>
                 <div id="contactdetail"> <p>Project by: Vikas Tiwari</p>
                   <p>Instagram:-vikastiwarisync</p>
                   <p>Github:-github.com/Vikas-Tiwari93</p></div>
@@ -1061,8 +1062,16 @@
 
 </html>
 <script>
-  function scrollbtn(){
+  function closed(){
+   let box= document.getElementById('contactdetail')
+   let button=document.getElementById('button')
+   box.style.display="none"
+   button.style.display='none'
 
-
+  }
+  function opened(){
+    let box= document.getElementById('contactdetail')
+    box.style.display="block"
+    button.style.display='block'
   }
 </script>

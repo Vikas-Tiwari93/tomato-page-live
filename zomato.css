@@ -433,23 +433,33 @@ footer {
   width: 20px;
   margin: 3px;
 }
-.network {
-  background-color: rgba(255, 0, 0, 0.759);
+#network {
+  background-color: rgba(255, 0, 0, 0.673);
   display: flex;
   justify-content: center;
-
+  border-radius: 12px;
   color: rgb(5, 4, 4);
 
   position: fixed;
   left: 10px;
   bottom: 3%;
-  width: 430px;
+
   height: 100px;
-  box-sizing: border-box;
+}
+#network button {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: 5px;
+  border-radius: 50%;
+  border: 1px solid silver;
+  display: none;
+}
+#network:hover button {
+  display: inline;
 }
 #contactimg {
-  width: 25%;
-  height: 100%;
+  width: 110px;
 
   display: flex;
   align-items: center;
@@ -699,7 +709,7 @@ footer {
     padding: 10px;
     font-size: 16px;
   }
-  .network {
+  #network {
     width: 350px;
     font-size: 12px;
     height: 65px;
